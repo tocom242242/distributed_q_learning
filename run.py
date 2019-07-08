@@ -9,8 +9,8 @@ if __name__ == '__main__':
     nb_episode = 40000
 
     actions = np.arange(3)
-    agent1 = DistributedQLearner(policy=EpsGreedyQPolicy(epsilon=.02), actions=actions)
-    agent2 = DistributedQLearner(policy=EpsGreedyQPolicy(epsilon=.02), actions=actions)
+    agent1 = DistributedQLearner(policy=EpsGreedyQPolicy(epsilon=.04), actions=actions)
+    agent2 = DistributedQLearner(policy=EpsGreedyQPolicy(epsilon=.04), actions=actions)
 
     game = MatrixGame()
     for episode in range(nb_episode):
